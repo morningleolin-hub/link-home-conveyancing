@@ -62,3 +62,25 @@ html{scroll-padding-top:92px}
 
 /* Multi-page layout and requested contact refinements */
 .page-hero{padding:38px 0 34px;background:linear-gradient(100deg,#f4f8fc,#fff)}.page-hero h1{font-family:"Playfair Display",Georgia,serif;color:var(--navy);font-size:clamp(30px,4vw,46px);margin:12px 0}.breadcrumb{font-size:12px;color:#60799a}.breadcrumb a{color:var(--navy)}.detail-page{max-width:900px;margin:0 auto;padding:34px}.detail-page h3{font-size:28px}.detail-page h4{margin-top:24px}.qr-grid{gap:12px}.qr-card img{width:105px;height:105px;object-fit:contain;margin:0 auto}.contact-info-panel .address-block{margin-bottom:16px}
+
+
+/* Layout safeguard: preserve the original centered content width on service pages */
+main .service-details > .wrap{width:min(1140px,calc(100% - 48px));margin-inline:auto}
+main .service-details .detail-card.detail-page{width:100%;max-width:900px;margin:0 auto;padding:34px}
+@media(max-width:700px){main .service-details > .wrap{width:calc(100% - 32px)}main .service-details .detail-card.detail-page{padding:20px}}
+
+/* Services dropdown: desktop and mobile */
+.services-menu{position:relative}
+.services-menu summary{list-style:none;cursor:pointer;padding:10px 0;border-bottom:2px solid transparent}
+.services-menu summary::-webkit-details-marker{display:none}
+.services-menu[open] summary,.services-menu summary:hover{border-color:var(--gold);color:var(--navy)}
+.services-dropdown{display:none;position:absolute;top:100%;left:0;min-width:245px;background:#fff;border:1px solid var(--line);box-shadow:0 12px 24px #102f5618;padding:7px 14px;z-index:80;white-space:normal}
+.services-menu[open] .services-dropdown{display:flex;flex-direction:column}
+.services-dropdown a{padding:9px 2px;border-bottom:1px solid #edf1f6;white-space:normal;line-height:1.35}
+.services-dropdown a:last-child{border-bottom:0}
+@media(max-width:820px){
+ .services-menu summary{padding:11px 0;border-bottom:1px solid #edf1f6;font-size:13px}
+ .services-dropdown{position:static;min-width:0;display:flex;flex-direction:column;box-shadow:none;border:0;border-left:2px solid var(--gold);margin:0 0 7px 8px;padding:2px 0 2px 14px}
+ .services-menu:not([open]) .services-dropdown{display:none}
+ .services-dropdown a{font-size:12px;padding:9px 0}
+}
