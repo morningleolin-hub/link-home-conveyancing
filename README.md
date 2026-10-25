@@ -1,16 +1,17 @@
 # Link Home Conveyancing website
 
-A lightweight static website designed for GitHub Pages.
+Static website for GitHub Pages. The site uses the existing repository publishing source (`main` branch, root folder).
 
 ## Files
-- `index.html` — website content
-- `styles.css` — layout, colours and responsive styling
-- `script.js` — mobile navigation and footer year
+- `index.html` — page content, navigation, six services and email contact.
+- `styles.css` — responsive styling.
+- `script.js` — mobile navigation and footer year.
+- `assets/link-home-logo.png` — navy and gold Link Home Conveyancing wordmark.
+- `assets/hero-property.jpg` — hero image cropped from the supplied homepage design reference.
+- `.nojekyll` — disables Jekyll processing.
 
-## Before publishing
-1. Update the Contact section in `index.html` with your approved business email and phone number.
-2. Check all service descriptions and business details for accuracy.
-3. Upload the files to the root of your GitHub repository.
-4. In GitHub, open **Settings → Pages** and choose **Deploy from a branch**, branch `main`, folder `/(root)`.
+## Publish updates
+Upload and commit all files/folders in this package to the root of the existing `link-home-conveyancing` GitHub repository, replacing the previous `index.html`, `styles.css`, `script.js`, and `README.md`. Keep `assets/` and `.nojekyll`. GitHub Pages should redeploy automatically.
 
-Do not add your GoDaddy domain or change DNS until the GitHub Pages site is published and tested. The current contact link is intentionally a placeholder.
+## Contact
+The email address is configured as `linkhomeconveyancing@gmail.com` in the contact banner and footer. No phone number or street address is displayed.
