@@ -6,6 +6,12 @@
       const open = nav.classList.toggle('open');
       toggle.setAttribute('aria-expanded', String(open));
       toggle.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation');
+      const servicesMenu = nav.querySelector('.services-menu');
+      const servicesToggle = nav.querySelector('.services-toggle');
+      if (!open && servicesMenu && servicesToggle) {
+        servicesMenu.classList.remove('open');
+        servicesToggle.setAttribute('aria-expanded', 'false');
+      }
     });
     nav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
       nav.classList.remove('open');

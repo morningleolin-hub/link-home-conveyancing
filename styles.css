@@ -100,3 +100,24 @@ main .service-details .detail-card.detail-page{width:100%;max-width:900px;margin
  .services-dropdown{position:static;min-width:0;width:100%;border:0;border-left:2px solid var(--gold);border-radius:0;box-shadow:none;margin:0 0 7px 7px;padding:2px 0 2px 13px}
  .services-dropdown a{font-size:12px;padding:10px 0}
 }
+
+/* Mobile Services submenu fix */
+@media(max-width:820px){
+  #primary-nav{overflow-y:auto;overflow-x:visible}
+  #primary-nav .services-menu{display:block;position:relative;width:100%;flex:0 0 auto;overflow:visible}
+  #primary-nav .services-toggle{
+    appearance:none;-webkit-appearance:none;display:flex;align-items:center;justify-content:space-between;
+    width:100%;margin:0;padding:11px 0;background:#fff;border:0;border-bottom:1px solid #edf1f6;
+    border-radius:0;color:#24446d;font-family:inherit;font-size:13px;font-weight:600;text-align:left;line-height:1.4
+  }
+  #primary-nav .services-dropdown,
+  #primary-nav .services-menu.open .services-dropdown{
+    position:static;inset:auto;display:none;width:100%;min-width:0;max-height:none;overflow:visible;
+    box-sizing:border-box;margin:0 0 7px 7px;padding:2px 0 2px 13px;
+    background:#fff;border:0;border-left:2px solid var(--gold);border-radius:0;box-shadow:none;z-index:auto
+  }
+  #primary-nav .services-menu.open .services-dropdown{display:flex;flex-direction:column}
+  #primary-nav .services-dropdown a{display:block;width:100%;padding:10px 10px 10px 0;border:0;border-bottom:1px solid #edf1f6;background:#fff;font-size:12px;line-height:1.45;white-space:normal}
+  #primary-nav .services-dropdown a:last-child{border-bottom:0}
+  #primary-nav .services-dropdown a:hover{background:var(--ice)}
+}
