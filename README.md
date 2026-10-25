@@ -1,17 +1,23 @@
 # Link Home Conveyancing website
 
-Static website for GitHub Pages. The site uses the existing repository publishing source (`main` branch, root folder).
+Static website for GitHub Pages.
 
 ## Files
-- `index.html` — page content, navigation, six services and email contact.
-- `styles.css` — responsive styling.
-- `script.js` — mobile navigation and footer year.
-- `assets/link-home-logo.png` — navy and gold Link Home Conveyancing wordmark.
-- `assets/hero-property.jpg` — hero image cropped from the supplied homepage design reference.
-- `.nojekyll` — disables Jekyll processing.
+- `index.html`: page content, service descriptions and contact form.
+- `styles.css`: layout and visual styling.
+- `script.js`: navigation interactions.
+- `assets/`: logo, hero image and QR codes.
+- `CNAME`: custom domain `linkhomeconveyancing.com.au`.
+- `.nojekyll`: disables Jekyll processing.
 
-## Publish updates
-Upload and commit all files/folders in this package to the root of the existing `link-home-conveyancing` GitHub repository, replacing the previous `index.html`, `styles.css`, `script.js`, and `README.md`. Keep `assets/` and `.nojekyll`. GitHub Pages should redeploy automatically.
+## Preview before publishing
+Extract the ZIP and open `index.html` in a browser. Keep the `assets` folder beside `index.html`.
 
-## Contact
-The email address is configured as `linkhomeconveyancing@gmail.com` in the contact banner and footer. No phone number or street address is displayed.
+## Publishing
+Upload the contents of this folder to the root of the GitHub repository. Keep `CNAME` and `.nojekyll` in the root. GitHub Pages will rebuild after committing.
+
+## Contact form
+The form uses FormSubmit. The mailbox `linkhomeconveyancing@gmail.com` must be activated by following the confirmation email sent after the first test submission. The service is third-party; test it before relying on it for live enquiries.
+
+## Notes
+Service pages contain general information only. Confirm the firm's actual scope of work and obtain transaction-specific advice before relying on the website content.
