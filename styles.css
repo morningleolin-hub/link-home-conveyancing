@@ -134,3 +134,10 @@ main .service-details .detail-card.detail-page{width:100%;max-width:900px;margin
 .feedback-note{font-size:10px;line-height:1.5;color:#7387a0;text-align:center;margin:16px 0 0}
 @media(max-width:820px){.client-feedback{padding:30px 0}.feedback-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.feedback-card{padding:16px 14px}.feedback-card p{font-size:11px}.feedback-zh p{font-size:12px}}
 @media(max-width:520px){.feedback-grid{grid-template-columns:1fr}.feedback-card{padding:17px 16px}.feedback-card p{font-size:12px}.feedback-zh p{font-size:13px}}
+
+
+/* Service page photography */
+.service-photo-band { padding: 0 0 1.5rem; background: #f2f6fa; }
+.service-photo-band .wrap { max-width: 1180px; }
+.service-photo-band img { display: block; width: 100%; height: clamp(180px, 27vw, 320px); object-fit: cover; object-position: center 48%; border-radius: 2px; }
+@media (max-width: 640px) { .service-photo-band { padding-bottom: 1rem; } .service-photo-band img { height: 190px; } }
