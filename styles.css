@@ -121,3 +121,16 @@ main .service-details .detail-card.detail-page{width:100%;max-width:900px;margin
   #primary-nav .services-dropdown a:last-child{border-bottom:0}
   #primary-nav .services-dropdown a:hover{background:var(--ice)}
 }
+
+/* Client feedback section */
+.client-feedback{padding:38px 0 36px}
+.feedback-intro{font-size:12px;color:#60799a;margin:8px 0 0}
+.feedback-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.feedback-card{position:relative;display:flex;flex-direction:column;min-width:0;background:#fff;border:1px solid #d8e3ef;border-radius:4px;padding:20px 18px 16px;box-shadow:0 3px 12px rgba(16,47,86,.035)}
+.feedback-mark{font-family:Georgia,serif;font-size:34px;line-height:.8;color:var(--gold);margin-bottom:9px}
+.feedback-card p{font-size:12px;line-height:1.7;color:#24446d;margin:0 0 18px;flex:1}
+.feedback-zh p{font-family:"Microsoft YaHei","PingFang SC",Arial,sans-serif;font-size:13px;line-height:1.85}
+.feedback-language{font-size:8px;letter-spacing:1.2px;font-weight:700;color:#9b752d;border-top:1px solid #edf1f6;padding-top:10px}
+.feedback-note{font-size:10px;line-height:1.5;color:#7387a0;text-align:center;margin:16px 0 0}
+@media(max-width:820px){.client-feedback{padding:30px 0}.feedback-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.feedback-card{padding:16px 14px}.feedback-card p{font-size:11px}.feedback-zh p{font-size:12px}}
+@media(max-width:520px){.feedback-grid{grid-template-columns:1fr}.feedback-card{padding:17px 16px}.feedback-card p{font-size:12px}.feedback-zh p{font-size:13px}}
