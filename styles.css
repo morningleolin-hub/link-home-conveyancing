@@ -141,3 +141,34 @@ main .service-details .detail-card.detail-page{width:100%;max-width:900px;margin
 .service-photo-band .wrap { width: min(1180px, calc(100% - 32px)); max-width: 1180px; margin-inline: auto; }
 .service-photo-band img { display: block; width: 100%; height: auto; aspect-ratio: 35 / 13; object-fit: cover; object-position: center; border-radius: 3px; }
 @media (max-width: 640px) { .service-photo-band { padding-bottom: 1rem; } .service-photo-band .wrap { width: calc(100% - 24px); } .service-photo-band img { width: 100%; height: auto; aspect-ratio: 35 / 13; object-fit: cover; } }
+
+/* Service pages: image-led hero and balanced content layout */
+.service-page-hero{position:relative;isolation:isolate;overflow:hidden;min-height:190px;display:flex;align-items:center;background:#102f56 var(--service-image) center 48%/cover no-repeat;color:#fff}
+.service-page-hero-shade{position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(7,31,58,.94) 0%,rgba(9,39,72,.82) 38%,rgba(9,39,72,.38) 68%,rgba(9,39,72,.08) 100%)}
+.service-page-hero-content{padding-top:24px;padding-bottom:24px}
+.service-page-hero .breadcrumb{color:#e5edf6;font-size:11px;margin:0 0 10px}
+.service-page-hero .breadcrumb a{color:#fff}
+.service-page-hero .gold-rule{margin-bottom:10px}
+.service-page-hero h1{font-family:"Playfair Display",Georgia,serif;color:#fff;font-size:clamp(30px,3.5vw,42px);line-height:1.12;font-weight:500;max-width:640px;margin:0 0 8px}
+.service-page-hero .hero-lead{color:#f4f7fb;max-width:480px;font-size:12px;line-height:1.5;margin:0}
+.service-details{padding:28px 0 34px}
+main .service-details > .wrap.service-detail-layout{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(250px,.8fr);gap:22px;align-items:stretch;width:min(1140px,calc(100% - 48px));margin-inline:auto}
+main .service-details .detail-card.detail-page{max-width:none;width:100%;margin:0;padding:26px 28px}
+.detail-page h3{font-size:23px;line-height:1.25;margin:0 0 7px}
+.detail-page p{font-size:13px;line-height:1.7;margin:0 0 15px}
+.detail-page p:last-child{margin-bottom:0}
+.service-detail-image{margin:0;min-width:0;min-height:100%;border-radius:4px;overflow:hidden;background:#fff;border:1px solid #e0e8f0;display:flex;align-items:center;justify-content:center}
+.service-detail-image img{display:block;width:100%;height:100%;min-height:280px;max-height:480px;object-fit:cover;object-position:center}
+@media(max-width:700px){
+ .service-page-hero{min-height:180px;background-position:center;background-size:cover}
+ .service-page-hero-shade{background:linear-gradient(90deg,rgba(7,31,58,.88),rgba(9,39,72,.55))}
+ .service-page-hero-content{padding-top:22px;padding-bottom:24px}
+ .service-page-hero h1{font-size:30px}
+ .service-page-hero .hero-lead{font-size:12px;max-width:95%}
+ main .service-details > .wrap.service-detail-layout{grid-template-columns:1fr;gap:14px;width:calc(100% - 32px)}
+ main .service-details .detail-card.detail-page{padding:21px 20px}
+ .detail-page h3{font-size:21px}
+ .detail-page p{font-size:13px;line-height:1.7}
+ .service-detail-image{height:auto;min-height:0;max-height:none}
+ .service-detail-image img{width:100%;height:auto;min-height:0;max-height:none;aspect-ratio:16/10;object-fit:contain;background:#fff}
+}
