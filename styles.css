@@ -138,6 +138,6 @@ main .service-details .detail-card.detail-page{width:100%;max-width:900px;margin
 
 /* Service page photography */
 .service-photo-band { padding: 0 0 1.5rem; background: #f2f6fa; }
-.service-photo-band .wrap { max-width: 1180px; }
-.service-photo-band img { display: block; width: 100%; height: clamp(180px, 27vw, 320px); object-fit: cover; object-position: center 48%; border-radius: 2px; }
-@media (max-width: 640px) { .service-photo-band { padding-bottom: 1rem; } .service-photo-band img { height: 190px; } }
+.service-photo-band .wrap { width: min(1180px, calc(100% - 32px)); max-width: 1180px; margin-inline: auto; }
+.service-photo-band img { display: block; width: 100%; height: auto; aspect-ratio: 35 / 13; object-fit: cover; object-position: center; border-radius: 3px; }
+@media (max-width: 640px) { .service-photo-band { padding-bottom: 1rem; } .service-photo-band .wrap { width: calc(100% - 24px); } .service-photo-band img { width: 100%; height: auto; aspect-ratio: 35 / 13; object-fit: cover; } }
